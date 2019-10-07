@@ -1,0 +1,71 @@
+# coding: utf-8
+from numpy.random import randint
+from numpy.random import choice
+words='''
+小
+胖
+呆
+宣
+玄
+謙
+安
+肥
+玉
+育
+龍
+熊
+貓
+狗
+豬
+黑
+藍
+慧
+璇
+馨
+欣
+心
+凱
+峰
+芝
+暉
+冠
+嫻
+稀
+熙
+茵
+承
+誠
+美
+鐵
+延
+巨'''
+lastname = '''
+陳
+古
+林
+王
+謝
+洪
+蘇
+張
+徐
+許
+江
+龍
+吳
+鄧
+鄭
+田
+蔣
+陶
+房
+大
+高'''
+phrase=words.split('\n')
+phrase2=lastname.split('\n')
+k=randint(1,3)
+egg=choice(phrase,k)
+eggs=choice(phrase2,1)
+ham=' '.join(egg)
+ham2=' '.join(eggs)
+print(ham2,ham)
